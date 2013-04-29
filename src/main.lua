@@ -586,7 +586,7 @@ function love.load()
   end
   addCapsule(-1, 32, "item")
   addCapsule(-1, 33, "item")
-  for i=1,24 do
+  for i=1,25 do
     if reactor.itemTypes[i] and reactor.itemTypes[i].recipe then
       addCapsule(1, i, "schema")
     end
