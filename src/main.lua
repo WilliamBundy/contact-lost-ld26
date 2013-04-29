@@ -605,19 +605,19 @@ function love.load()
   end
 
   for i,n in pairs{5,4,2,1,16,17,18} do
-    addCapsule(1, n+32, "schema")
+    addCapsule(1, n+31, "schema")
   end
   for i,n in pairs{15,6,3,7} do
-    addCapsule(2, n+32, "schema")
+    addCapsule(2, n+31, "schema")
   end
   for i,n in pairs{9,8} do
-    addCapsule(3,n+32,"schema")
+    addCapsule(3,n+31,"schema")
   end
   for i,n in pairs{14,10} do
-    addCapsule(4, n+32, "schema")
+    addCapsule(4, n+31, "schema")
   end
   for i,n in pairs{13,12,11} do
-    addCapsule(5,n+32,"schema")
+    addCapsule(5,n+31,"schema")
   end
 
   reactor.enemies = {}
