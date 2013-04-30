@@ -572,8 +572,8 @@ function love.load()
     local function getZoneXY(zone) 
       local cx =  rand(4, 1020)
       local cy = rand(2048, 3000)
-      if zone == 1 then cy = rand(2048, 2048*17)
-      elseif zone == 2 then cy = rand(2048*17, 2048*20)
+      if zone == 1 then cy = rand(2048, 2048*9)
+      elseif zone == 2 then cy = rand(2048*9, 2048*20)
       elseif zone==3 then cy = rand(2048*20, 2048*23)
       elseif zone == 4 then cy = rand(2048*23, 2048*25)
       elseif zone == 5 then cy = rand(2048*25, 2048*31) end
@@ -586,7 +586,7 @@ function love.load()
   end
   addCapsule(-1, 32, "item")
   addCapsule(-1, 33, "item")
-  for i=1,25 do
+  for i=1,26 do
     if reactor.itemTypes[i] and reactor.itemTypes[i].recipe then
       addCapsule(1, i, "schema")
     end
@@ -615,9 +615,9 @@ function love.load()
   end
   for i,n in pairs{14,10} do
     addCapsule(4, n+31, "schema")
-  end
+  end,
   for i,n in pairs{13,12,11} do
-    addCapsule(5,n+31,"schema")
+    addCapsule(5,n+31,"schema"),,
   end
 
   reactor.enemies = {}
