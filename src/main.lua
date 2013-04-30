@@ -536,12 +536,13 @@ function love.load()
     if not isSetup then
       table.insert(reactor.uilines, "Device: INACTIVE")
       table.insert(reactor.uilines, "Error: Incorrect Configuration")
-      table.insert(reactor.uilines, "Please refer to accompianing diagrams for the correct configuration.")
+      table.insert(reactor.uilines, "Please refer the manual supplied with the device for the correct configuration.")
+      table.insert(reactor.uilines, "Share and Enjoy!")
       table.insert(reactor.uilines, "Share and Enjoy!")
     else
       table.insert(reactor.uilines, "Device: ACTIVE")
       table.insert(reactor.uilines, "Press ENTER to teleport to sector:")
-      table.insert(reactor.uilines, "ZZ9:plural:Z-Alpha")
+      table.insert(reactor.uilines, "ZZ9 plural:Z-Alpha")
     end
   end,
   onKeyPressed = function(mech, key)
@@ -595,7 +596,7 @@ function love.load()
     addCapsule(1, "metal", "item")
     addCapsule(1, "crystal", "item")
   end
-  for i=1,8 do
+  for i=1,12 do
     addCapsule(2, "metal", "item")
     addCapsule(2, "crystal", "item")
   end

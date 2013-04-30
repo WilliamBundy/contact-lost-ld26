@@ -1,0 +1,126 @@
+Hello and welcome to a tutorial for William Bundy's Ludum Dare 26 game, Contact: Lost.
+
+BEFORE YOU START PLAYING---------
+Make sure that you have the LATEST VERSION: currently: v1-2. The Original Entry version is the one I completed at the end of the compo. I'm leaving it there for historical reasons. It's pretty likely to bug out on you, so just don't play it unless you desperately worry about all of the gamebreaking bugs that are in that version. Seriously, don't do it, it can't be beaten. 
+--------------------------------
+
+
+First things first, we find ourselves on a grassy plain, next to a body of water, underneath a huge sign that proclaims the story, your crash landing, and the ultimate goal of the game: to build and correctly configure a teleporter.
+
+It mentions a purple temple to the far south, which we'll reach later, and something called a hooloovoo. For those of you who haven't read The Hitchhiker's guide to the galaxy, a hooloovoo is a superintelligent shade of the colour blue, usually refracted into a prism. Unfortunately, we're up against their impure hillbilly cousins.
+
+Lets analyze what we see here: 
+ - The player character, your avatar, he always looks at your mouse. Try shooting by clicking the left mouse button.
+ - You might see a cluster of grey boxes on the ground. Those are rocks. They are impenetrable statics. Hopefully they might act as a shield towards later enemies.
+ - There should be several capsules lying around. You can tell they're friendly because they're the same colour as you are. They can contain items or schematics.
+ - "Items?! Schematics?! I don't know what those are!" It's okay, look up at the top-left corner of the screen. This is the HUD that the suit projects to you. It's pretty minimal, but it tells you everything you need to know. 
+ 
+The first line is your HP. Hit points. Every time you touch an enemy, they go down (by their attack minus your defense (which starts out at zero, by the way)). Watch out. You can upgrade your maximum health later on, which is useful against the harder enemies. 
+
+The next two lines are your position, X and Y. These correspond to your absolute position in the world divided by thirty-two. As soon as I finish explaining the UI and the tutorial, we'll be travelling south, until we get to around Y = 572
+
+Next we have a line that says "No Machine." The meaning of this will become clean once you collect some of the capsules on the ground and place one of the Fabricators or Storage Cells you find.
+
+Beneath that we have our inventory. It corresponds to the number keys on the keyboard (1 -> 0). At any given time, you can only hold ten items. If you care to look in the first slot, you'll see that you are holding some organic fibres. These act as a component in many fabrication procedures. We'll find out more about the various items and machines as we go along. Important: if you press the up and down arrows on your keyboard, you can rotate your inventory, moving items up or down a slot respectively. This is important for sorting your items and putting items in machines.
+
+The last two lines tell us about the current schematic we're looking at. Currently, schematic number 1 tells us how to ...fabricate?... a potato! It tells us that we need to put an organic fibre in the first slot of a fabricator. Pressing left and right allows us to change the schematic we're looking at, but currently we only have one: Potato. Why would we ever want a potato? To eat of course! It restores hit points: between 10 and 25 I think.
+
+Moving on, we should walk around and investigate every capsule we see. In order to beat the game, you need specific schematics, and you have no idea of which one is in a given capsule. Don't worry about some being inaccessible: there's two of each on the map; if you can't get one, hopefully you can find the other. You might also find items strewn around the map. You'll need those to build the first machines to advance. Without moving too far down on the screen, pick up every capsule you see. One of them should have a fabricator in it, and another one should have a storage cell. (There are two of each). If your inventory fills up, you haven't found a fabricator, and you can't pick up anything else, hold shift and press the number button that corresponds to the item you want to drop. A capsule will fall out on the ground, which you can't pick up for four seconds (so you can't accidentally pick it up again).
+
+AT THIS POINT YOU SHOULD:
+ - have familliarized yourself with the standard WASD controls
+ - understand the inventory
+ - understand schematics
+ - have explored a little, picking up any capsules you see
+ - obtained a fabricator
+ 
+Now you have a fabricator, find an open area, and put it on the ground by pressing the button that corresponds to its slot in the inventory, ie: if your HUD reads "HP...X...Y...No Machine...1: Fabricator" press 1... and BOOM
+
+If what just happened frightened you, don't run away. All that has happened is that our HUD now reflects an interface to the machine we are now standing over: the freshly-placed fabricator. Notice that the line that previously said "New Machine" now reads "Fabricator"? Yeah. You're ready to start fabricating things.
+
+The fist thing to do is to turn that organic fibre you started with into a potato. Use the arrow keys to get the fibre into the first slot of your inventory. Then, press 1 on your keyboard to switch the contents of slot 1 of the fabricator (nothing) with your organic fibre. You can do this with all machines. In fact, if you found a storage cell in your little exploration, that's all it does: it stores 10 items for you in its slots, allowing you to sort through a large number of items, but I digress. You just put your organic fibre in the first slot of the fabricator, yes? Good. Now, make sure that the schematic for "Potato" is selected. If it isn't, use the left and right arrow keys to find it (it should be at ID 1). Now, press enter to fabricate your very first potato. 
+
+How did that feel? Exciting? Exhilarating? (That was how I felt when it worked during development). Press 1 on your keyboard to switch the potato out of the fabricator, and back into your inventory. 
+
+It's time to start going south, but we don't want to leave our fabricator behind. To pick it up, press "Q" on your keyboard. If you have an empty slot in your inventory, it'll show up in there, otherwise, you'll leave it on the ground. With your slightly-used fabricator in hand, off to the south we go!
+
+As you head down, don't forget to investigate all the capsules! I can't stress it enough, you need the stuff that's in there, and if you can't pick it up now, build storage cells and come back for them later.
+
+As you go south, have you seen a red triangle? That's one of them hillbilly hooloovoos I warned you about. Aim at it with the mouse and shoot to kill (Left mouse button). These guys aren't too bad--you can run away and snipe them--but in big groups they're pretty deadly. Kill every one you see though: you're going to be transversing the plains several more times, and it'll be easier for you if you don't have to deal with them again; they don't respawn.
+
+So you've been going south for a while, killing every hooloovoo in sight, and you approach the desert, around Y=572. Hang back a bit. There are bigger, nastier hooloovoos down there, and you don't want to get hit by them. It's around here that I'd start making a base. Fabricators, storage cells, the lot. At this point, I'd start going back into the plains, collecting and storing items in storage cells. Remember to follow the schema exactly when fabricating things. If it says that a Metal Ingot goes in the second slot, put it there. The fabricator won't fabricate without it. 
+
+AT THIS POINT YOU SHOULD:
+ - have made your way close to the desert.
+ - have started a little base
+ - fabricated a few more storage cells
+ - filled them with items. (crystals, metal, potatoes)
+ - killed all the hooloovoos you see. Even the green ones of the desert die if you shoot them enough. 
+ 
+Onwards to the desert! <--- If you're that gung-ho about the desert, you're going to die there.
+
+Those big green hooloovoos are tough to kill. They have a defense of 1, which means that your gun does less damage than it normally would, and they have a high HP, too. In the desert, we're searching for four schematics: the miner, the furnace, the chemical washer, and the upgrade station. (If/when you find schematics for things that sound like machines that aren't talked about in this guide, don't bother with them. I built tags for them into the game (they're fully functional decoration blocks) but they don't have any code associated with them; all they do is look pretty.) 
+
+A word of wisdom for the big green hooloovoos: capture one's attention, then run north and snipe. That's really the only way to kill them. The desert is huge, and if you venture too far south, you might find the violet hooloovoos of the temple. You cannot hurt them yet: their defense (5) is higher than the attack of your gun (2). Run away as fast as you can: if you ventured that far south and didn't find the schemas you needed, then there's a problem with the game and you should contact me, or you missed something.
+
+Here are the tutorials for the schematics you should find:
+
+THE MINER: after being placed on the ground. the miner will start digging as soon as you activate it with enter. 60 seconds later, it'll have in its inventory what was in the ground. In the desert, you're likely to find metal ore and crystals. In the plains, you're only going to find organic fibres (living stuff from the ground!). After mining out a 4x4 tile area, it can't mine there again. To process metal ore, you need to build a grinder.
+
+THE GRINDER: with the grinder you can grind metal ore in to ore chunks... that's about it.
+
+THE CHEMICAL WASHER: with the chemical washer, you can clean up ore chunks, making cleaned ore chunks.
+
+THE FURNACE: allows you to cook your clean ore chunks into metal ingots. Yay! You can also turn potatoes into roast potatoes, which restore even more HP!
+
+THE UPGRADE STATION: lets you upgrade your character. Hopefully its tooltip explains to you enough about how it works to let you upgrade successfully. You need at least 5 damage upgrades, probably, to advance.
+
+AT THIS POINT YOU SHOULD:
+ - have built the things you need in order to upgrade yourself significantly. 
+ - have miners to extract more ore from the ground.
+ - get ready for the temple.
+ 
+--If the game bugs out on you doing something described in the previous part, contact me for a fix--
+ 
+Oh my, the temple.
+
+You need to find more schematics here. You might have found a few of them earlier, but here's what you need:
+ - Nuclear Reactor
+ - Teleporter
+ - Transmission Booster
+ - Signal Stabiliser
+ - Galactic Navigator
+
+Also, you need to go mining in the temple. From your miners, youn need to obtain 40 Radioactive Cells, only found in the temple. 
+
+Once you have all of the schematics, you must build them in the following quantities:
+ - Reactor x 4
+ - Teleporter x 1
+ - Transmission Booster x 8
+ - Signal Stabiliser x 8
+ - Galactic Navigator x 4
+ 
+Now, find a wide open area. Look at the "MANUAL SUPPLIED WITH THE DEVICE" heading on the ludumdare page for the game. It refers you to the second screenshot. That is the correct configuration. 
+
+Here is my best attempt in ASCII
+
+ ooX==
+ oo%==
+ X%^%X
+ ==%oo
+ ==Xoo
+ 
+Where:
+ - "o" = transmission booster
+ - "X" = galactic navigator
+ - "=" = signal stabiliser
+ - "%" = nuclear reactor
+ - "^" = teleporter
+ 
+Remember that the reactors must be fully charged: ie, they have a full stock of Radioactive Cells.
+
+After placing all of the machines down and charging the reactors, you should be able to use the teleporter.
+
+Contact Restored. Welcome home.
+
+FUN FACTS: If I had had the time, most of the machines would have needed water to function, which, if you notice, is only found at the edges of the map.
